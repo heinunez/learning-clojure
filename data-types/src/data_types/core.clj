@@ -1,5 +1,6 @@
 (ns data-types.core
-  (:require [clojure.string :as str]))
+  (:require [clojure.string :as str])
+  (:require [data-types.tempdb :as db]))
 
 ; (set! *print-level* 2) set print depth level
 
@@ -62,4 +63,5 @@
   (println (change-color gemstone-db :ruby "blue"))
   (println (update-in gemstone-db [:ruby :stock] dec))
   (println (update-in gemstone-db [:ruby :sales] conj 999))
-  (println (sell gemstone-db :ruby 666))) 
+  (println (sell gemstone-db :ruby 666))
+  (db/main)) 
