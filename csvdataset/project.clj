@@ -7,4 +7,4 @@
                  [org.clojure/data.csv "0.1.4"]
                  [semantic-csv "0.2.1-alpha1"]]
   :repl-options {:init-ns csvdataset.core}
-  :main csvdataset.core/main)
+  :main csvdataset.tennis_rivalry/main)
